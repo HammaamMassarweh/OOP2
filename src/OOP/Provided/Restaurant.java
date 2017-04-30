@@ -1,3 +1,5 @@
+package OOP.Provided;
+
 /**
  * Each instance of the Restaurant class has an id, a name, distance
  * from the Technion, and holds a collection of menu items.

@@ -1,4 +1,8 @@
-import javax.xml.ws.FaultAction;
+package OOP.Solution;
+
+import OOP.Provided.HungryStudent;
+import OOP.Provided.Restaurant;
+
 import java.util.Set;
 import java.util.HashSet;
 

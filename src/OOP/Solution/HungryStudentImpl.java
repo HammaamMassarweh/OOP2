@@ -1,3 +1,8 @@
+package OOP.Solution;
+
+import OOP.Provided.HungryStudent;
+import OOP.Provided.Restaurant;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
