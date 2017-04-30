@@ -89,7 +89,7 @@ public class HungryStudentImpl implements HungryStudent {
 
         favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(((RestaurantImpl)r1).getId())) >= rLimit );
 
-        favStream = favStream.sorted( (r1,r2) -> 0 );
+        favStream = favStream.sorted( (r1,r2) -> 110 );
 
         return null;
     }
