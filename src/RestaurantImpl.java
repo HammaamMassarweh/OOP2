@@ -74,8 +74,8 @@ public class RestaurantImpl implements Restaurant {
     public int getId() {
         return id;
     }
-/*
-    public int compareTo(Restaurant o) {
+
+    public int compareByRating(Restaurant o) {
         if ( this.averageRating() > ((RestaurantImpl)o).averageRating()) return  -1;
              else if ( this.averageRating() == ((RestaurantImpl)o).averageRating() ) {
                  if ( this.distance() < ((RestaurantImpl)o).distance()    ) return -1;
@@ -86,5 +86,5 @@ public class RestaurantImpl implements Restaurant {
         return 1;
 
     }
-    */
+
 }

@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -82,6 +83,41 @@ public class HungryStudentImpl implements HungryStudent {
         return this.friends;
     }
 
+    private int compareRes(Restaurant r1,Restaurant r2,String RateBy){
+        RestaurantImpl myR1 = (RestaurantImpl)r1;
+        RestaurantImpl myR2 = (RestaurantImpl)r1;
+
+        int r1Rate = this.resRates.get(myR1.getId());
+        int r2Rate = this.resRates.get(myR2.getId());
+
+        int ratingDiff;
+        if(RateBy == "distance") {
+            ratingDiff = myR1.distance() - myR2.distance();
+        }else{
+            ratingDiff = r2Rate - r1Rate;
+        }
+        if(ratingDiff != 0) {
+            return ratingDiff;
+        }
+
+        int distDiff;
+        if(RateBy == "distance") {
+            distDiff = r2Rate - r1Rate;
+        }else{
+            distDiff = myR1.distance() - myR2.distance();
+        }
+        if(distDiff != 0) {
+            return distDiff;
+        }
+
+        int idDiff = myR1.getId() - myR2.getId();
+        if(idDiff != 0) {
+            return idDiff;
+        }
+
+        return 0;
+    }
+
     @Override
     public Collection<Restaurant> favoritesByRating(int rLimit) {
 
@@ -89,14 +125,21 @@ public class HungryStudentImpl implements HungryStudent {
 
         favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(((RestaurantImpl)r1).getId())) >= rLimit );
 
-        favStream = favStream.sorted( (r1,r2) -> 1101 );
+        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"rating") );
 
-        return null;
+        return favStream.collect(Collectors.toSet());
     }
 
     @Override
     public Collection<Restaurant> favoritesByDist(int dLimit) {
-        return null;
+
+        Stream<Restaurant> favStream= this.favorites.stream();
+
+        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(r1.distance())) >= dLimit );
+
+        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"rating") );
+
+        return favStream.collect(Collectors.toSet());
     }
 
     @Override
