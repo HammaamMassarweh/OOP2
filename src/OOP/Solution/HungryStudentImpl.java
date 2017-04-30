@@ -137,6 +137,10 @@ public class HungryStudentImpl implements HungryStudent {
 
         Stream<Restaurant> favStream= this.favorites.stream();
 
+        if(favStream == null){
+            return null;
+        }
+
         favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(r1.distance())) <= dLimit );
 
         favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"distance") );
@@ -147,5 +151,19 @@ public class HungryStudentImpl implements HungryStudent {
     @Override
     public int compareTo(HungryStudent o) {
         return  this.id - ((HungryStudentImpl)o).id ;
+    }
+
+    @Override
+    public String toString(){
+
+        ArrayList<String> names = new ArrayList<String>();
+
+        for (Restaurant res: this.favorites) {
+            names.add(((RestaurantImpl)res).getName());
+        }
+
+        return "Hungry student: " + this.name + ".\n" +
+                "Id: " + this.id + ".\n" +
+                "Favorites: "+ names.stream().sorted((s1,s2) -> s1.compareTo(s2)).collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".\n";
     }
 }

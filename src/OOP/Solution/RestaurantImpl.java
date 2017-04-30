@@ -4,15 +4,20 @@ import OOP.Provided.HungryStudent;
 import OOP.Provided.Restaurant;
 
 import java.util.Set;
-import java.util.HashSet;
+import java.util.stream.Collectors;
 
 
 public class RestaurantImpl implements Restaurant {
 
     int id;
+
+    public String getName() {
+        return name;
+    }
+
     String name;
     int distFromTech;
-    HashSet<String> menu;
+    Set<String> menu;
     int numberOfRates;
     double ratesSum;
 
@@ -20,7 +25,7 @@ public class RestaurantImpl implements Restaurant {
         this.id = id;
         this.name = name;
         this.distFromTech = distFromTech;
-        this.menu = new HashSet<String>();
+        this.menu = menu;
         this.numberOfRates=0;
         this.ratesSum=0;
     }
@@ -89,6 +94,15 @@ public class RestaurantImpl implements Restaurant {
         }
         return 1;
 
+    }
+
+    @Override
+    public String toString(){
+
+        return "Restaurant: " + this.name + ".\n" +
+                "Id: " + this.id + ".\n" +
+                "Distance: "+ this.distFromTech +".\n" +
+                "Menu: "+ this.menu.stream().sorted((s1,s2) -> s1.compareTo(s2)).collect(Collectors.toList()).toString().substring(1,this.menu.toString().length()-1) +".\n";
     }
 
 }
