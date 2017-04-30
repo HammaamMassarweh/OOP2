@@ -101,6 +101,6 @@ public class HungryStudentImpl implements HungryStudent {
 
     @Override
     public int compareTo(HungryStudent o) {
-        return 0;
+        return  this.id - ((HungryStudentImpl)o).id ;
     }
 }
