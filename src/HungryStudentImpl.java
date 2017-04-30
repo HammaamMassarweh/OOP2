@@ -2,9 +2,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * Created by Hamam on 4/30/2017.
- */
 public class HungryStudentImpl implements HungryStudent {
 
     int id;
