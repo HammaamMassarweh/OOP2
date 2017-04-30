@@ -123,7 +123,7 @@ public class HungryStudentImpl implements HungryStudent {
 
         Stream<Restaurant> favStream= this.favorites.stream();
 
-        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(((RestaurantImpl)r1).getId())) >= rLimit );
+        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(((RestaurantImpl)r1).averageRating())) >= rLimit );
 
         favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"rating") );
 
@@ -135,9 +135,9 @@ public class HungryStudentImpl implements HungryStudent {
 
         Stream<Restaurant> favStream= this.favorites.stream();
 
-        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(r1.distance())) >= dLimit );
+        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(r1.distance())) <= dLimit );
 
-        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"rating") );
+        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"distance") );
 
         return favStream.collect(Collectors.toSet());
     }
