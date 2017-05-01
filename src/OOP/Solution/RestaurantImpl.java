@@ -9,17 +9,12 @@ import java.util.stream.Collectors;
 
 public class RestaurantImpl implements Restaurant {
 
-    int id;
-
-    public String getName() {
-        return name;
-    }
-
-    String name;
-    int distFromTech;
-    Set<String> menu;
-    int numberOfRates;
-    double ratesSum;
+    private int id;
+    private String name;
+    private int distFromTech;
+    private Set<String> menu;
+    private int numberOfRates;
+    private double ratesSum;
 
     public RestaurantImpl(int id, String name, int distFromTech, Set<String> menu) {
         this.id = id;
@@ -30,6 +25,10 @@ public class RestaurantImpl implements Restaurant {
         this.ratesSum=0;
     }
 
+
+    String getName() {
+        return name;
+    }
 
     public int distance() {
         return distFromTech;
@@ -70,30 +69,16 @@ public class RestaurantImpl implements Restaurant {
 
     @Override
     public boolean equals(Object o) {
-        if (!(o instanceof RestaurantImpl)) {
-            return false;
-        }
-        return this.id == ((RestaurantImpl)o).id;
+        return o instanceof RestaurantImpl && this.id == ((RestaurantImpl) o).id;
     }
+
     public int compareTo(Restaurant o) {
         return  this.id - ((RestaurantImpl)o).id ;
 
     }
 
-    public int getId() {
+    int getId() {
         return id;
-    }
-
-    public int compareByRating(Restaurant o) {
-        if ( this.averageRating() > ((RestaurantImpl)o).averageRating()) return  -1;
-             else if ( this.averageRating() == ((RestaurantImpl)o).averageRating() ) {
-                 if ( this.distance() < ((RestaurantImpl)o).distance()    ) return -1;
-                    else if ( this.distance() == ((RestaurantImpl)o).distance()) {
-                            if ( this.id > ((RestaurantImpl)o).id ) return -1;
-                 }
-        }
-        return 1;
-
     }
 
     @Override
@@ -102,7 +87,7 @@ public class RestaurantImpl implements Restaurant {
         return "Restaurant: " + this.name + ".\n" +
                 "Id: " + this.id + ".\n" +
                 "Distance: "+ this.distFromTech +".\n" +
-                "Menu: "+ this.menu.stream().sorted((s1,s2) -> s1.compareTo(s2)).collect(Collectors.toList()).toString().substring(1,this.menu.toString().length()-1) +".\n";
+                "Menu: "+ this.menu.stream().sorted().collect(Collectors.toList()).toString().substring(1,this.menu.toString().length()-1) +".\n";
     }
 
 }

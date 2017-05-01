@@ -44,15 +44,25 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
     }
 
     public HungryStudent getStudent(int id) throws HungryStudent.StudentNotInSystemException {
+<<<<<<< HEAD
         for ( HungryStudent s : HungryStudents) {
             if ( id == ((HungryStudentImpl)s).id ) return  s;
+=======
+        for ( HungryStudentImpl s : HungryStudents) {
+            if ( id == ((HungryStudentImpl)s).getId() ) return  s;
+>>>>>>> origin/master
         }
         throw  new HungryStudent.StudentNotInSystemException();
     }
 
     public Restaurant getRestaurant(int id) throws Restaurant.RestaurantNotInSystemException {
+<<<<<<< HEAD
         for ( Restaurant r : Restaurants) {
             if ( id == ((RestaurantImpl)r).id ) return  r;
+=======
+        for ( RestaurantImpl r : Restaurants) {
+            if ( id == ((RestaurantImpl)r).getId() ) return  r;
+>>>>>>> origin/master
         }
         throw  new Restaurant.RestaurantNotInSystemException();
     }

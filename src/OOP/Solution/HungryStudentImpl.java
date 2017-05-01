@@ -8,28 +8,28 @@ import java.util.stream.Collectors;
 
 public class HungryStudentImpl implements HungryStudent {
 
-    int id;
-    String name;
-    HashSet<Restaurant> favorites;
-    HashSet<HungryStudent> friends;
+    private int id;
+    private String name;
+    private HashSet<Restaurant> favorites;
+    private HashSet<HungryStudent> friends;
 
 
-    HashMap<Integer,Integer> resRates;
+    private HashMap<Integer,Integer> resRates;
 
     public HungryStudentImpl(int id, String name) {
         this.id = id;
         this.name = name;
-        this.favorites = new HashSet<Restaurant>();
-        this.friends = new HashSet<HungryStudent>();
-        this.resRates = new HashMap<Integer,Integer>();
+        this.favorites = new HashSet<>();
+        this.friends = new HashSet<>();
+        this.resRates = new HashMap<>();
     }
 
-    public HashMap<Integer,Integer> getResRates(){
-        return resRates;
+    public int getId() {
+        return id;
     }
 
     // adds the rate to the resturant id and returns the old rate, or -1 if he's rating for the first time.
-    public int rateResturant(int resId,int rate) throws Restaurant.RateRangeException{
+    int rateResturant(int resId,int rate) throws Restaurant.RateRangeException{
 
         if(rate > 5 || rate < 0){
             throw new Restaurant.RateRangeException();
@@ -92,7 +92,7 @@ public class HungryStudentImpl implements HungryStudent {
         double r2Rate = myR2.averageRating();
 
         double ratingDiff;
-        if(RateBy == "distance") {
+        if(RateBy.equals("distance")) {
             ratingDiff = myR1.distance() - myR2.distance();
         }else{
             ratingDiff = r2Rate - r1Rate;
@@ -102,7 +102,7 @@ public class HungryStudentImpl implements HungryStudent {
         }
 
         double distDiff;
-        if(RateBy == "distance") {
+        if(RateBy.equals("distance")) {
             distDiff = r2Rate - r1Rate;
         }else{
             distDiff = myR1.distance() - myR2.distance();
@@ -143,7 +143,7 @@ public class HungryStudentImpl implements HungryStudent {
     @Override
     public String toString(){
 
-        ArrayList<String> names = new ArrayList<String>();
+        ArrayList<String> names = new ArrayList<>();
 
         for (Restaurant res: this.favorites) {
             names.add(((RestaurantImpl)res).getName());
@@ -151,6 +151,6 @@ public class HungryStudentImpl implements HungryStudent {
 
         return "Hungry student: " + this.name + ".\n" +
                 "Id: " + this.id + ".\n" +
-                "Favorites: "+ names.stream().sorted((s1,s2) -> s1.compareTo(s2)).collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".\n";
+                "Favorites: "+ names.stream().sorted().collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".\n";
     }
 }
