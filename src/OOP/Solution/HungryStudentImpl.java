@@ -67,7 +67,7 @@ public class HungryStudentImpl implements HungryStudent {
     @Override
     public HungryStudent addFriend(HungryStudent s) throws SameStudentException, ConnectionAlreadyExistsException {
 
-        if(this == s){
+        if(this.equals(s)){
             throw new SameStudentException();
         }
         if(this.friends.contains(s)){

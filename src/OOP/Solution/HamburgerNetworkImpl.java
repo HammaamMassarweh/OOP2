@@ -117,8 +117,9 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
         if ( s.favorites().contains(r)) return true;
         dontPass.add(s);
         for (HungryStudent f : s.getFriends() ) {
-            return BFS_friends(f,r,t-1,dontPass);
+            if(BFS_friends(f,r,t-1,dontPass)) return true;
         }
+        dontPass.remove(s);
         return false;
     }
 
