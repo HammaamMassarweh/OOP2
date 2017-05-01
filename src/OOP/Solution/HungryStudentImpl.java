@@ -5,7 +5,6 @@ import OOP.Provided.Restaurant;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class HungryStudentImpl implements HungryStudent {
 
@@ -87,29 +86,29 @@ public class HungryStudentImpl implements HungryStudent {
 
     private int compareRes(Restaurant r1,Restaurant r2,String RateBy){
         RestaurantImpl myR1 = (RestaurantImpl)r1;
-        RestaurantImpl myR2 = (RestaurantImpl)r1;
+        RestaurantImpl myR2 = (RestaurantImpl)r2;
 
-        int r1Rate = this.resRates.get(myR1.getId());
-        int r2Rate = this.resRates.get(myR2.getId());
+        double r1Rate = myR1.averageRating();
+        double r2Rate = myR2.averageRating();
 
-        int ratingDiff;
+        double ratingDiff;
         if(RateBy == "distance") {
             ratingDiff = myR1.distance() - myR2.distance();
         }else{
             ratingDiff = r2Rate - r1Rate;
         }
         if(ratingDiff != 0) {
-            return ratingDiff;
+            return ratingDiff > 0 ? 1 : -1;
         }
 
-        int distDiff;
+        double distDiff;
         if(RateBy == "distance") {
             distDiff = r2Rate - r1Rate;
         }else{
             distDiff = myR1.distance() - myR2.distance();
         }
         if(distDiff != 0) {
-            return distDiff;
+            return distDiff > 0 ? 1 : -1;
         }
 
         int idDiff = myR1.getId() - myR2.getId();
@@ -123,29 +122,17 @@ public class HungryStudentImpl implements HungryStudent {
     @Override
     public Collection<Restaurant> favoritesByRating(int rLimit) {
 
-        Stream<Restaurant> favStream= this.favorites.stream();
-
-        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(((RestaurantImpl)r1).averageRating())) >= rLimit );
-
-        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"rating") );
-
-        return favStream.collect(Collectors.toSet());
+        return this.favorites.stream().filter(r1 -> r1.averageRating() >= rLimit)
+                .sorted((r1,r2) -> compareRes(r1,r2,"rating") )
+                .collect(Collectors.toList());
     }
 
     @Override
     public Collection<Restaurant> favoritesByDist(int dLimit) {
 
-        Stream<Restaurant> favStream= this.favorites.stream();
-
-        if(favStream == null){
-            return null;
-        }
-
-        favStream = favStream.filter( r1 -> this.resRates.get(this.resRates.get(r1.distance())) <= dLimit );
-
-        favStream = favStream.sorted( (r1,r2) -> compareRes(r1,r2,"distance") );
-
-        return favStream.collect(Collectors.toSet());
+        return this.favorites.stream().filter(r1 -> r1.distance() <= dLimit)
+                .sorted((r1,r2) -> compareRes(r1,r2,"distance"))
+                .collect(Collectors.toList());
     }
 
     @Override
