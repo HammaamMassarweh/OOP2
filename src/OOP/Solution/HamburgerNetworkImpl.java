@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 
 public class HamburgerNetworkImpl implements HamburgerNetwork {
 
+
     private ArrayList<Restaurant> Restaurants;
     private ArrayList<HungryStudent> HungryStudents;
 
@@ -131,5 +132,32 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
         if ( t < 0 ) throw new ImpossibleConnectionException();
         HashSet<HungryStudent> dontPass = new HashSet<HungryStudent>();
         return BFS_friends(s,r,t,dontPass);
+    }
+
+    @Override
+    public String toString(){
+        /**
+         * @return the network's description as a string in the following format:
+         * <format>
+         * Registered students: <studentId1, studentId2, studentId3...>.
+         * Registered restaurants: <resId1, resId2, resId3...>.
+         * Students:
+         * <student1Id> -> [<friend1Id, friend2Id, friend3Id...>].
+         * <student2Id> -> [<friend1Id, friend2Id, friend3Id...>].
+         * ...
+         * End students.
+         * </format>
+         * Note: students, restaurants and friends' ids are ordered by natural integer order, asc.*
+         * Example:
+         *
+         * Registered students: 1, 236703, 555555.
+         * Registered restaurants: 12, 13.
+         * Students:
+         * 1 -> [236703, 555555555].
+         * 236703 -> [1].
+         * 555555 -> [1].
+         * End students.
+         * */
+        return  "";
     }
 }
