@@ -69,7 +69,10 @@ public class RestaurantImpl implements Restaurant {
 
     @Override
     public boolean equals(Object o) {
-        return o instanceof RestaurantImpl && this.id == ((RestaurantImpl) o).id;
+        if (!(o instanceof RestaurantImpl)) {
+            return false;
+        }
+        return this.id == ((RestaurantImpl)o).id;
     }
 
     public int compareTo(Restaurant o) {
@@ -87,7 +90,7 @@ public class RestaurantImpl implements Restaurant {
         return "Restaurant: " + this.name + ".\n" +
                 "Id: " + this.id + ".\n" +
                 "Distance: "+ this.distFromTech +".\n" +
-                "Menu: "+ this.menu.stream().sorted().collect(Collectors.toList()).toString().substring(1,this.menu.toString().length()-1) +".\n";
+                "Menu: "+ this.menu.stream().sorted().collect(Collectors.toList()).toString().substring(1,this.menu.toString().length()-1) +".";
     }
 
 }

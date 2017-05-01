@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f80d0860-2252-4f47-bfe3-bb5760651331" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oop2/OOP/Solution/HamburgerNetworkImpl.class" afterPath="$PROJECT_DIR$/out/production/oop2/OOP/Solution/HamburgerNetworkImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oop2/OOP/Tests/HungryStudentImplTest.class" afterPath="$PROJECT_DIR$/out/production/oop2/OOP/Tests/HungryStudentImplTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oop2/OOP/Tests/RestaurantImplTest.class" afterPath="$PROJECT_DIR$/out/production/oop2/OOP/Tests/RestaurantImplTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Solution/HamburgerNetworkImpl.java" afterPath="$PROJECT_DIR$/src/OOP/Solution/HamburgerNetworkImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java" afterPath="$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java" afterPath="$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Tests/HamburgerNetworkImplTest.java" afterPath="$PROJECT_DIR$/src/OOP/Tests/HamburgerNetworkImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Tests/HungryStudentImplTest.java" afterPath="$PROJECT_DIR$/src/OOP/Tests/HungryStudentImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OOP/Tests/RestaurantImplTest.java" afterPath="$PROJECT_DIR$/src/OOP/Tests/RestaurantImplTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,31 +31,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HungryStudentImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HungryStudentImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="153" column="139" lean-forward="false" selection-start-line="153" selection-start-column="139" selection-end-line="153" selection-end-column="139" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#4183#4184#0" expanded="true" />
-                <element signature="e#4277#4278#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HamburgerNetworkImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HamburgerNetworkImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HamburgerNetworkImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="176" column="31" lean-forward="false" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
+              <caret line="176" column="29" lean-forward="false" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
               <folding>
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1532#1533#0" expanded="true" />
                 <element signature="e#2866#2878#0" expanded="true" />
                 <element signature="e#3632#3644#0" expanded="true" />
                 <element signature="e#5529#5544#0" expanded="true" />
@@ -58,77 +59,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HamburgerNetworkImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/OOP/Tests/HamburgerNetworkImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="749" column="0" lean-forward="false" selection-start-line="749" selection-start-column="0" selection-end-line="749" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1493642218840" expanded="true" signature="564:609" ph="/**...*/" />
-                <marker date="1493642218840" expanded="false" signature="2780:2791" ph=" { " />
-                <marker date="1493642218840" expanded="false" signature="2828:2834" ph=" }" />
-                <marker date="1493642218840" expanded="true" signature="2893:3499" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="2944:3207" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="3560:4299" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="3610:3918" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="4366:5134" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="4418:4780" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="5203:6021" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="5253:5656" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="6079:7004" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="6297:6721" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="7065:8063" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="7291:7760" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="8124:10552" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="8176:8441" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="10617:17155" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="10882:11147" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="11207:11516" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="12920:13025" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="13094:13137" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="13347:13392" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="17218:23735" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="17483:17748" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="17808:18117" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="19521:19626" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="19695:19738" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="19948:19993" ph="//..." />
-                <marker date="1493642218840" expanded="true" signature="23800:43573" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="24066:24334" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="26012:26281" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="28070:28339" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="30330:30599" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="33303:33572" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="35085:35354" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="37085:37365" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="38558:38827" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="40270:40539" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="42136:42405" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="43614:46035" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="43907:44168" ph="{...}" />
-                <marker date="1493642218840" expanded="true" signature="44228:44486" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RestaurantImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="71" column="81" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="81" />
-              <folding />
+            <state relative-caret-position="317">
+              <caret line="92" column="142" lean-forward="false" selection-start-line="92" selection-start-column="142" selection-end-line="92" selection-end-column="142" />
+              <folding>
+                <element signature="e#1702#1703#0" expanded="true" />
+                <element signature="e#1727#1728#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,9 +105,9 @@
         <option value="$PROJECT_DIR$/src/OOP/Tests/HungryStudentImplTest.java" />
         <option value="$PROJECT_DIR$/src/OOP/Solution/HungryStudentImplTest.java" />
         <option value="$PROJECT_DIR$/src/OOP/Tests/RestaurantImplTest.java" />
-        <option value="$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java" />
         <option value="$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java" />
         <option value="$PROJECT_DIR$/src/OOP/Solution/HamburgerNetworkImpl.java" />
+        <option value="$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java" />
       </list>
     </option>
   </component>
@@ -227,68 +166,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solution" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
@@ -338,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HamburgerNetworkImplTest">
+  <component name="RunManager" selected="JUnit.RestaurantImplTest">
     <configuration default="false" name="HungryStudentImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -391,32 +268,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="HungryStudentImplTest.favoritesByDist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="OOP.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="oop2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="OOP.Tests" />
-      <option name="MAIN_CLASS_NAME" value="OOP.Tests.HungryStudentImplTest" />
-      <option name="METHOD_NAME" value="favoritesByDist" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="HungryStudentImplTest.getFriends" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -457,6 +308,32 @@
       <option name="MAIN_CLASS_NAME" value="OOP.Tests.HamburgerNetworkImplTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RestaurantImplTest.to_String" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="OOP.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="oop2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="OOP.Tests" />
+      <option name="MAIN_CLASS_NAME" value="OOP.Tests.RestaurantImplTest" />
+      <option name="METHOD_NAME" value="to_String" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
@@ -904,17 +781,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RestaurantImplTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.favoritesByDist" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.getFriends" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HamburgerNetworkImplTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.getFriends" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HamburgerNetworkImplTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RestaurantImplTest.to_String" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HamburgerNetworkImplTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RestaurantImplTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantImplTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.getFriends" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.favoritesByDist" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HamburgerNetworkImplTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RestaurantImplTest.to_String" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HungryStudentImplTest.getFriends" />
       </list>
     </recent_temporary>
   </component>
@@ -978,43 +855,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 11m 27s.xml">
+    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 43m 07s.xml">
       <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 17m 48s.xml">
+    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 45m 37s.xml">
       <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 18m 50s.xml">
+    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 46m 59s.xml">
       <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 19m 44s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="HungryStudentImplTest - 2017.05.01 at 15h 43m 47s.xml">
+      <configuration name="HungryStudentImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 24m 13s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="HungryStudentImplTest - 2017.05.01 at 15h 44m 10s.xml">
+      <configuration name="HungryStudentImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 26m 46s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="HungryStudentImplTest - 2017.05.01 at 15h 45m 49s.xml">
+      <configuration name="HungryStudentImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 29m 37s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="HungryStudentImplTest - 2017.05.01 at 15h 47m 13s.xml">
+      <configuration name="HungryStudentImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 29m 47s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="RestaurantImplTest - 2017.05.01 at 15h 46m 01s.xml">
+      <configuration name="RestaurantImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 37m 38s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="RestaurantImplTest - 2017.05.01 at 15h 47m 24s.xml">
+      <configuration name="RestaurantImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HamburgerNetworkImplTest - 2017.05.01 at 15h 38m 11s.xml">
-      <configuration name="HamburgerNetworkImplTest" configurationId="JUnit" />
+    <history-entry file="RestaurantImplTest_to_String - 2017.05.01 at 15h 45m 57s.xml">
+      <configuration name="RestaurantImplTest.to_String" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26019000" />
+    <option name="totallyTimeSpent" value="26587000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1026,13 +902,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508998" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1112,14 +988,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/OOP/Tests/HamburgerNetworkImplTest.java</url>
-          <line>749</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
@@ -1141,9 +1009,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3298">
           <caret line="205" column="36" lean-forward="true" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,9 +1019,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1166,9 +1031,8 @@
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1179,9 +1043,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1277,9 +1140,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,9 +1158,8 @@
           <caret line="158" column="87" lean-forward="false" selection-start-line="158" selection-start-column="87" selection-end-line="158" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1317,10 +1177,6 @@
         <state relative-caret-position="306">
           <caret line="104" column="13" lean-forward="true" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
             <element signature="e#2866#2878#0" expanded="true" />
             <element signature="e#3632#3644#0" expanded="true" />
             <element signature="e#5529#5544#0" expanded="true" />
@@ -1334,9 +1190,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1353,9 +1208,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6783">
           <caret line="399" column="0" lean-forward="false" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,9 +1234,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1394,9 +1246,8 @@
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1407,9 +1258,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1445,32 +1295,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HungryStudentImplTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/OOP/Tests/RestaurantImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="205" column="36" lean-forward="false" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OOP/Tests/HungryStudentImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="71" column="81" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.11-sources.jar!/org/junit/runner/JUnitCore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1545,19 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#4183#4184#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1568,53 +1379,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OOP/Tests/HamburgerNetworkImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="749" column="0" lean-forward="false" selection-start-line="749" selection-start-column="0" selection-end-line="749" selection-end-column="0" />
+        <state relative-caret-position="9435">
+          <caret line="583" column="0" lean-forward="false" selection-start-line="583" selection-start-column="0" selection-end-line="583" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OOP/Tests/HungryStudentImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4097">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OOP/Tests/RestaurantImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="205" column="36" lean-forward="false" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OOP/Solution/RestaurantImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="92" column="142" lean-forward="false" selection-start-line="92" selection-start-column="142" selection-end-line="92" selection-end-column="142" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1493642218840" expanded="true" signature="564:609" ph="/**...*/" />
-            <marker date="1493642218840" expanded="false" signature="2780:2791" ph=" { " />
-            <marker date="1493642218840" expanded="false" signature="2828:2834" ph=" }" />
-            <marker date="1493642218840" expanded="true" signature="2893:3499" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="2944:3207" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="3560:4299" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="3610:3918" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="4366:5134" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="4418:4780" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="5203:6021" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="5253:5656" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="6079:7004" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="6297:6721" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="7065:8063" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="7291:7760" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="8124:10552" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="8176:8441" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="10617:17155" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="10882:11147" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="11207:11516" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="12920:13025" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="13094:13137" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="13347:13392" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="17218:23735" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="17483:17748" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="17808:18117" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="19521:19626" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="19695:19738" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="19948:19993" ph="//..." />
-            <marker date="1493642218840" expanded="true" signature="23800:43573" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="24066:24334" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="26012:26281" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="28070:28339" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="30330:30599" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="33303:33572" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="35085:35354" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="37085:37365" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="38558:38827" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="40270:40539" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="42136:42405" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="43614:46035" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="43907:44168" ph="{...}" />
-            <marker date="1493642218840" expanded="true" signature="44228:44486" ph="{...}" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1622,15 +1415,23 @@
     <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HamburgerNetworkImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="176" column="31" lean-forward="false" selection-start-line="176" selection-start-column="31" selection-end-line="176" selection-end-column="31" />
+          <caret line="176" column="29" lean-forward="false" selection-start-line="176" selection-start-column="29" selection-end-line="176" selection-end-column="29" />
           <folding>
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
             <element signature="e#2866#2878#0" expanded="true" />
             <element signature="e#3632#3644#0" expanded="true" />
             <element signature="e#5529#5544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OOP/Solution/HungryStudentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="153" column="139" lean-forward="false" selection-start-line="153" selection-start-column="139" selection-end-line="153" selection-end-column="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>

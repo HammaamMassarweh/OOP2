@@ -174,7 +174,7 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
             res +=  sFriendsIds.toString();
             res +=  ".\n" ;
         }
-        res += "End students.\n";
+        res += "End students.";
 
 
         return res ;

@@ -151,7 +151,7 @@ public class HungryStudentImpl implements HungryStudent {
 
         return "Hungry student: " + this.name + ".\n" +
                 "Id: " + this.id + ".\n" +
-                "Favorites: "+ names.stream().sorted().collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".\n";
+                "Favorites: "+ names.stream().sorted().collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".";
     }
 
     @Override
