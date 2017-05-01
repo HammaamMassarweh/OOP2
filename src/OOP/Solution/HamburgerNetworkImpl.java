@@ -76,10 +76,10 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
         List<HungryStudent> friendsList = s.getFriends().stream().sorted().collect(Collectors.toList());
         for (HungryStudent HS : friendsList ) {
             for (Restaurant favoriteRestaurant : HS.favoritesByRating(0) ) {
-
+                res.add(favoriteRestaurant);
             }
         }
-        return null;
+        return res;
     }
 
 
