@@ -153,4 +153,9 @@ public class HungryStudentImpl implements HungryStudent {
                 "Id: " + this.id + ".\n" +
                 "Favorites: "+ names.stream().sorted().collect(Collectors.toList()).toString().substring(1,names.toString().length()-1) +".\n";
     }
+
+    @Override
+    public boolean equals(Object o){
+        return o instanceof HungryStudentImpl && this.id == ((HungryStudentImpl) o).id;
+    }
 }
