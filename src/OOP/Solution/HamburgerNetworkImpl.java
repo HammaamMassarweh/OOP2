@@ -12,12 +12,12 @@ import java.util.stream.Collectors;
 
 public class HamburgerNetworkImpl implements HamburgerNetwork {
 
-    ArrayList<RestaurantImpl> Restaurants;
-    ArrayList<HungryStudentImpl> HungryStudents;
+    private ArrayList<Restaurant> Restaurants;
+    private ArrayList<HungryStudent> HungryStudents;
 
     public HamburgerNetworkImpl() {
-        Restaurants = new ArrayList<RestaurantImpl>();
-        HungryStudents = new ArrayList<HungryStudentImpl>();
+        Restaurants = new ArrayList<Restaurant>();
+        HungryStudents = new ArrayList<HungryStudent>();
     }
 
 
@@ -36,30 +36,26 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
     }
 
     public Collection<HungryStudent> registeredStudents() {
-        return null;
+        return HungryStudents;
     }
-
 
     public Collection<Restaurant> registeredRestaurants() {
-        return null;
+        return Restaurants;
     }
 
-
     public HungryStudent getStudent(int id) throws HungryStudent.StudentNotInSystemException {
-        for ( HungryStudentImpl s : HungryStudents) {
-            if ( id == s.id ) return  s;
+        for ( HungryStudent s : HungryStudents) {
+            if ( id == ((HungryStudentImpl)s).id ) return  s;
         }
         throw  new HungryStudent.StudentNotInSystemException();
     }
 
-
     public Restaurant getRestaurant(int id) throws Restaurant.RestaurantNotInSystemException {
-        for ( RestaurantImpl r : Restaurants) {
-            if ( id == r.id ) return  r;
+        for ( Restaurant r : Restaurants) {
+            if ( id == ((RestaurantImpl)r).id ) return  r;
         }
         throw  new Restaurant.RestaurantNotInSystemException();
     }
-
 
     public HamburgerNetwork addConnection(HungryStudent s1, HungryStudent s2) throws HungryStudent.StudentNotInSystemException, HungryStudent.ConnectionAlreadyExistsException, HungryStudent.SameStudentException {
         if ( !(HungryStudents.contains(s1)) || !(HungryStudents.contains(s2)  )) {
@@ -70,25 +66,67 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
         return this;
     }
 
-
+   // duple code !!!!!!!!!!
     public Collection<Restaurant> favoritesByRating(HungryStudent s) throws HungryStudent.StudentNotInSystemException {
-       HashSet<Restaurant> res = new  HashSet<Restaurant>();
+        if (!HungryStudents.contains(s)) { throw new HungryStudent.StudentNotInSystemException() ;}
+        HashSet<Restaurant> res = new  HashSet<Restaurant>();
         List<HungryStudent> friendsList = s.getFriends().stream().sorted().collect(Collectors.toList());
         for (HungryStudent HS : friendsList ) {
+            /*
             for (Restaurant favoriteRestaurant : HS.favoritesByRating(0) ) {
                 res.add(favoriteRestaurant);
             }
+            */
+            res.addAll(HS.favoritesByRating(0));
         }
         return res;
     }
 
 
     public Collection<Restaurant> favoritesByDist(HungryStudent s) throws HungryStudent.StudentNotInSystemException {
-        return null;
+        if (!HungryStudents.contains(s)) { throw new HungryStudent.StudentNotInSystemException() ;}
+        HashSet<Restaurant> res = new HashSet<Restaurant>();
+        List<HungryStudent> friendsList = s.getFriends().stream().sorted().collect(Collectors.toList());
+        for (HungryStudent HS : friendsList ) {
+            /*
+            for (Restaurant favoriteRestaurant : HS.favoritesByDist( Integer.MAX_VALUE) ) {
+                res.add(favoriteRestaurant);
+            }
+            */
+            res.addAll(HS.favoritesByDist( Integer.MAX_VALUE));
+        }
+        return res;
     }
 
 
-    public boolean getRecommendation(HungryStudent s, Restaurant r, int t) throws HungryStudent.StudentNotInSystemException, Restaurant.RestaurantNotInSystemException, ImpossibleConnectionException {
+    static  boolean BFS_friends(HungryStudent s, Restaurant r, int t,HashSet<HungryStudent> dontPass) {
+        if( t < 0 ) return  false;
+        if (dontPass.contains(s)) return  false;
+        if ( s.favorites().contains(r)) return true;
+        dontPass.add(s);
+        for (HungryStudent f : s.getFriends() ) {
+            return BFS_friends(f,r,t-1,dontPass);
+        }
         return false;
+    }
+
+ /*
+    static  boolean BFS_friends(HungryStudent s, Restaurant r, int t,HashSet<HungryStudent> dontPass) {
+        if( t < 0 ) return  false;
+        if (dontPass.contains(s)) return  false;
+        if ( s.favorites().contains(r)) return true;
+        dontPass.add(s);
+        for (HungryStudent f : s.getFriends(). ) {
+            return BFS_friends(f,r,t-1,dontPass);
+        }
+        return false;
+    }
+*/
+    public boolean getRecommendation(HungryStudent s, Restaurant r, int t) throws HungryStudent.StudentNotInSystemException, Restaurant.RestaurantNotInSystemException, ImpossibleConnectionException {
+        if (!HungryStudents.contains(s)) { throw new HungryStudent.StudentNotInSystemException() ;}
+        if (!Restaurants.contains(r)) { throw new Restaurant.RestaurantNotInSystemException() ;}
+        if ( t < 0 ) throw new ImpossibleConnectionException();
+        HashSet<HungryStudent> dontPass = new HashSet<HungryStudent>();
+        return BFS_friends(s,r,t,dontPass);
     }
 }
