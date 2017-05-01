@@ -145,31 +145,40 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
     @Override
     public String toString(){
 
-        return "Registered students: " + registeredStudents().toString() + ".\n"  +
-                "Registered restaurants: " ;
+        String res = "";
 
-        /**
-         * @return the network's description as a string in the following format:
-         * <format>
-         * Registered students: <studentId1, studentId2, studentId3...>.
-         * Registered restaurants: <resId1, resId2, resId3...>.
-         * Students:
-         * <student1Id> -> [<friend1Id, friend2Id, friend3Id...>].
-         * <student2Id> -> [<friend1Id, friend2Id, friend3Id...>].
-         * ...
-         * End students.
-         * </format>
-         * Note: students, restaurants and friends' ids are ordered by natural integer order, asc.*
-         * Example:
-         *
-         * Registered students: 1, 236703, 555555.
-         * Registered restaurants: 12, 13.
-         * Students:
-         * 1 -> [236703, 555555555].
-         * 236703 -> [1].
-         * 555555 -> [1].
-         * End students.
-         * */
+        ArrayList<Integer> registeredStudentsIds = new ArrayList<>();
+        for ( HungryStudent s : registeredStudents() ) {
+            registeredStudentsIds.add(((HungryStudentImpl)s).getId());
+        }
+
+        res+= "Registered students: " + registeredStudentsIds.toString().substring(1,registeredStudentsIds.toString().length()-1) + ".\n";
+        ArrayList<Integer> registeredRestaurantsIds = new ArrayList<>();
+
+        for ( Restaurant s : registeredRestaurants() ) {
+            registeredRestaurantsIds.add(((RestaurantImpl)s).getId());
+        }
+
+        res+= "Registered restaurants: " + registeredRestaurantsIds.toString().substring(1,registeredRestaurantsIds.toString().length()-1) + ".\n";
+
+        res += "Students:" + "\n"  ;
+
+        for ( HungryStudent s : registeredStudents() ) {
+           res +=  ((HungryStudentImpl)s).getId()+ " -> " ;
+            ArrayList<Integer> sFriendsIds = new ArrayList<>();
+            for ( HungryStudent sf : s.getFriends()  ) {
+                sFriendsIds.add( ((HungryStudentImpl)sf).getId());
+            }
+            sFriendsIds.sort((a,b) -> a-b);
+            res +=  sFriendsIds.toString();
+            res +=  ".\n" ;
+        }
+        res += "End students.";
+
+
+        return res ;
+
+
 
     }
 }

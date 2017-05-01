@@ -1,13 +1,15 @@
 package OOP.Tests;
 
 import OOP.Provided.HamburgerNetwork;
+import OOP.Provided.HamburgerNetwork.ImpossibleConnectionException;
 import OOP.Provided.HungryStudent;
+import OOP.Provided.HungryStudent.ConnectionAlreadyExistsException;
+import OOP.Provided.HungryStudent.SameStudentException;
+import OOP.Provided.HungryStudent.StudentAlreadyInSystemException;
+import OOP.Provided.HungryStudent.StudentNotInSystemException;
 import OOP.Provided.Restaurant;
-
-import OOP.Provided.HungryStudent.*;
-import OOP.Provided.Restaurant.*;
-import OOP.Provided.HamburgerNetwork.*;
-
+import OOP.Provided.Restaurant.RestaurantAlreadyInSystemException;
+import OOP.Provided.Restaurant.RestaurantNotInSystemException;
 import OOP.Solution.HamburgerNetworkImpl;
 import OOP.Solution.HungryStudentImpl;
 import OOP.Solution.RestaurantImpl;
@@ -17,11 +19,8 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-
 
 import static org.junit.Assert.*;
 
