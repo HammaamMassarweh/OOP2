@@ -72,32 +72,40 @@ public class HamburgerNetworkImpl implements HamburgerNetwork {
    // duple code !!!!!!!!!!
     public Collection<Restaurant> favoritesByRating(HungryStudent s) throws HungryStudent.StudentNotInSystemException {
         if (!HungryStudents.contains(s)) { throw new HungryStudent.StudentNotInSystemException() ;}
-        HashSet<Restaurant> res = new  HashSet<Restaurant>();
+        ArrayList<Restaurant> res = new  ArrayList<Restaurant>();
         List<HungryStudent> friendsList = s.getFriends().stream().sorted().collect(Collectors.toList());
         for (HungryStudent HS : friendsList ) {
-            /*
+
             for (Restaurant favoriteRestaurant : HS.favoritesByRating(0) ) {
+                if(res.contains(favoriteRestaurant)){
+                    continue;
+                }
                 res.add(favoriteRestaurant);
             }
-            */
-            res.addAll(HS.favoritesByRating(0));
+
+            //res.addAll(HS.favoritesByRating(0));
         }
+
         return res;
     }
 
 
     public Collection<Restaurant> favoritesByDist(HungryStudent s) throws HungryStudent.StudentNotInSystemException {
         if (!HungryStudents.contains(s)) { throw new HungryStudent.StudentNotInSystemException() ;}
-        HashSet<Restaurant> res = new HashSet<Restaurant>();
+        ArrayList<Restaurant> res = new ArrayList<Restaurant>();
         List<HungryStudent> friendsList = s.getFriends().stream().sorted().collect(Collectors.toList());
         for (HungryStudent HS : friendsList ) {
-            /*
+
             for (Restaurant favoriteRestaurant : HS.favoritesByDist( Integer.MAX_VALUE) ) {
+                if(res.contains(favoriteRestaurant)){
+                    continue;
+                }
                 res.add(favoriteRestaurant);
             }
-            */
-            res.addAll(HS.favoritesByDist( Integer.MAX_VALUE));
+
+            //res.addAll(HS.favoritesByDist( Integer.MAX_VALUE));
         }
+
         return res;
     }
 
