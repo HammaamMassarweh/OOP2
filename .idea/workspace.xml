@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f80d0860-2252-4f47-bfe3-bb5760651331" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oop2/OOP/Solution/HungryStudentImpl.class" afterPath="$PROJECT_DIR$/out/production/oop2/OOP/Solution/HungryStudentImpl.class" />
+    <list default="true" id="f80d0860-2252-4f47-bfe3-bb5760651331" name="Default" comment="Tests Passed">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -820,7 +819,7 @@
       <updated>1493553518569</updated>
       <workItem from="1493553527396" duration="922000" />
       <workItem from="1493554711143" duration="136000" />
-      <workItem from="1493624165312" duration="5780000" />
+      <workItem from="1493624165312" duration="5841000" />
     </task>
     <task id="LOCAL-00001" summary="byDistance from intelliJ">
       <created>1493556645688</created>
@@ -843,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493629875366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tests Passed">
+      <created>1493629981503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493629981503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -879,7 +885,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16567000" />
+    <option name="totallyTimeSpent" value="16628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
