@@ -77,7 +77,7 @@ public class HungryStudentImpl implements HungryStudent {
         this.friends.add(s);
 
 
-        return null;
+        return this;
     }
 
     @Override
